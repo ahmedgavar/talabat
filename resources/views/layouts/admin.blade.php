@@ -11,20 +11,27 @@
   <link rel="stylesheet" href= {{ asset('assets/admin/plugins/fontawesome-free/css/all.min.css') }}>
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  @yield('css_calls')
+
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href= {{ asset('assets/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}>
   <!-- Theme style -->
   <link rel="stylesheet" href= {{ asset('assets/admin/dist/css/adminlte.min.css') }}>
+  <link rel="stylesheet" href= {{ asset('assets/admin/css/bootstrap_rtl-v4.2.1/bootstrap.min.css') }}>
   <link rel="stylesheet" href= {{ asset('assets/admin/css/bootstrap_rtl-v4.2.1/custom_rtl.css') }}>
+
   <link rel="stylesheet" href= {{ asset('assets/admin/css/mycustomstyle.css') }}>
 
 
   <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link href={{ asset('assets/admin/fonts/SansPro/SansPro.min.css') }}  rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <!-- Site wrapper -->
 <div class="wrapper">
+    {{-- content  --}}
+
   <!-- Navbar -->
   @include('admin.includes.navbar')
   <!-- /.navbar -->
